@@ -8,7 +8,7 @@ This folder is the main learning notebook for:
 Technical statement: This repository converts course videos into executable contract exercises and explainable engineering artifacts.  
 Plain analogy: It is a study lab where every lecture becomes a small working machine you can touch and test.
 
----
+------
 
 ## What Lives Here
 
