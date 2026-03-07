@@ -68,7 +68,7 @@ contract SimpleIOU {
     balances[_creditor] += _amount;
     debts[msg.sender][_creditor] -= _amount;
 
-    emit Transaction(msg.sender, _creditor, _amount, "DebtPayment")
+    emit Transaction(msg.sender, _creditor, _amount, "DebtPayment");
   }
 
   //direct transfer method using transfer()
@@ -105,7 +105,7 @@ contract SimpleIOU {
     balances[msg.sender] -= _amount;
     (bool success, ) = payable(msg.sender).call{value: _amount}("");
     require(success, "Withdrawal failed.");
-
+    
     emit Transaction(msg.sender, payable(msg.sender), _amount, "Withdrawal");
   }
 
